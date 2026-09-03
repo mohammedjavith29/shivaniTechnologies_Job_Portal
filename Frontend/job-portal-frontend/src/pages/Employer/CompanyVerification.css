@@ -1,0 +1,421 @@
+.company-verification-page {
+    min-height: 100vh;
+    background: #f5f6f8;
+    padding: 25px 30px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.verification-page-header {
+    margin-bottom: 20px;
+}
+
+.verification-breadcrumb {
+    font-size: 12px;
+    color: #8a8f95;
+    margin-bottom: 8px;
+}
+
+.verification-breadcrumb span {
+    margin: 0 7px;
+}
+
+.verification-page-header h1 {
+    margin: 0;
+    color: #222;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.verification-page-header p {
+    margin: 6px 0 0;
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* =========================
+   STATUS CARD
+========================= */
+
+.verification-status-card {
+    background: #fff;
+    border: 1px solid #dfe3e8;
+    border-radius: 5px;
+    min-height: 68px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+}
+
+.verification-status-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.verification-status-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff5df;
+    color: #c47a00;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.verification-status-left h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+
+.verification-status-left p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    color: #888;
+}
+
+.verification-badge {
+    padding: 6px 12px;
+    border-radius: 13px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.verification-badge.pending {
+    background: #fff5df;
+    color: #b87300;
+}
+
+.verification-badge.verified {
+    background: #e9f8ef;
+    color: #19864a;
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.verification-form-card {
+    background: #fff;
+    border: 1px solid #dfe3e8;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.verification-section {
+    padding: 24px 26px;
+    border-bottom: 1px solid #e5e7ea;
+}
+
+.verification-section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 23px;
+}
+
+.verification-section-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+
+    background: #eef5ff;
+    color: #1473e6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+}
+
+.verification-section-header h2 {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.verification-section-header p {
+    margin: 4px 0 0;
+    color: #8a8f95;
+    font-size: 12px;
+}
+
+
+/* =========================
+   FORM GRID
+========================= */
+
+.verification-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 28px;
+    row-gap: 19px;
+}
+
+.verification-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.verification-field.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.verification-field label {
+    color: #444;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.verification-field label span {
+    color: #e23b3b;
+    margin-left: 3px;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.verification-field input,
+.verification-field select,
+.verification-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 1px solid #d5d9de;
+    border-radius: 4px;
+
+    background: #fff;
+    color: #333;
+
+    font-size: 13px;
+    outline: none;
+
+    transition: border 0.2s ease;
+}
+
+.verification-field input,
+.verification-field select {
+    height: 37px;
+    padding: 0 11px;
+}
+
+.verification-field textarea {
+    padding: 10px 11px;
+    resize: vertical;
+}
+
+.verification-field input::placeholder,
+.verification-field textarea::placeholder {
+    color: #a5a9ae;
+}
+
+.verification-field input:focus,
+.verification-field select:focus,
+.verification-field textarea:focus {
+    border-color: #1473e6;
+    box-shadow: 0 0 0 2px rgba(20, 115, 230, 0.08);
+}
+
+
+/* =========================
+   FILE INPUT
+========================= */
+
+.file-input-wrapper {
+    height: 37px;
+    border: 1px dashed #cfd4da;
+    border-radius: 4px;
+    background: #fafbfc;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.file-input-wrapper input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 7px 10px;
+    box-sizing: border-box;
+    background: transparent;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.file-input-wrapper input:focus {
+    box-shadow: none;
+    border: 0;
+}
+
+.selected-file {
+    margin-top: 5px;
+    color: #1473e6;
+    font-size: 11px;
+}
+
+
+/* =========================
+   CHECKLIST
+========================= */
+
+.verification-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding: 2px 0;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #555;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.check-item input {
+    width: 15px;
+    height: 15px;
+    accent-color: #1473e6;
+    cursor: pointer;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.verification-form-footer {
+    height: 68px;
+    padding: 0 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+
+    background: #fafbfc;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.verification-cancel-btn,
+.verification-submit-btn {
+    height: 36px;
+    padding: 0 18px;
+
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.verification-cancel-btn {
+    background: #fff;
+    border: 1px solid #d3d7dc;
+    color: #444;
+}
+
+.verification-cancel-btn:hover {
+    background: #f5f6f8;
+}
+
+.verification-submit-btn {
+    background: #1473e6;
+    border: 1px solid #1473e6;
+    color: #fff;
+}
+
+.verification-submit-btn:hover {
+    background: #0d65d1;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .company-verification-page {
+        padding: 18px;
+    }
+
+    .verification-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .verification-field.full-width {
+        grid-column: auto;
+    }
+
+    .verification-status-card {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px 18px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .verification-page-header h1 {
+        font-size: 21px;
+    }
+
+    .verification-section {
+        padding: 20px 17px;
+    }
+
+    .verification-form-footer {
+        padding: 0 17px;
+    }
+
+    .verification-cancel-btn,
+    .verification-submit-btn {
+        flex: 1;
+    }
+
+    .verification-section-header h2 {
+        font-size: 15px;
+    }
+}

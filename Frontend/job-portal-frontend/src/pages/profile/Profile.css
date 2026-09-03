@@ -1,0 +1,684 @@
+/* =========================================================
+   ZOHO STYLE PROFILE PAGE
+========================================================= */
+
+.zoho-profile-page {
+    min-height: 100vh;
+    background: #f5f7fa;
+    color: #263238;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.profile-topbar {
+    height: 64px;
+    background: #ffffff;
+    border-bottom: 1px solid #e3e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.profile-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-logo {
+    width: 38px;
+    height: 38px;
+    border-radius: 7px;
+    background: #1677ff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.profile-brand h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #202124;
+}
+
+.profile-brand span {
+    font-size: 11px;
+    color: #7a8490;
+}
+
+.profile-top-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.top-icon-btn {
+    width: 38px;
+    height: 38px;
+    border: 0;
+    background: transparent;
+    border-radius: 6px;
+    color: #5f6b76;
+    font-size: 17px;
+    position: relative;
+    cursor: pointer;
+}
+
+.top-icon-btn:hover {
+    background: #f1f4f7;
+}
+
+.notification-dot {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ff4d4f;
+    top: 7px;
+    right: 8px;
+}
+
+.top-user {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-left: 12px;
+    padding-left: 15px;
+    border-left: 1px solid #e5e8eb;
+}
+
+.top-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #e9f2ff;
+    color: #1677ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.top-user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-user-info strong {
+    font-size: 12px;
+    color: #263238;
+}
+
+.top-user-info span {
+    font-size: 10px;
+    color: #8a949e;
+}
+
+.top-user > i {
+    font-size: 11px;
+    color: #8a949e;
+    margin-left: 5px;
+}
+
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.profile-layout {
+    display: flex;
+    min-height: calc(100vh - 64px);
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.profile-sidebar {
+    width: 230px;
+    background: #ffffff;
+    border-right: 1px solid #e3e7eb;
+    padding: 22px 12px;
+    flex-shrink: 0;
+}
+
+.sidebar-heading {
+    font-size: 10px;
+    font-weight: 700;
+    color: #9aa3ab;
+    padding: 0 13px;
+    margin-bottom: 12px;
+    letter-spacing: 0.7px;
+}
+
+.profile-side-link {
+    height: 43px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 13px;
+    margin-bottom: 3px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #56616c;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+
+.profile-side-link i {
+    width: 19px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.profile-side-link:hover {
+    background: #f3f7fc;
+    color: #1677ff;
+}
+
+.profile-side-link.active {
+    background: #eaf3ff;
+    color: #1677ff;
+    font-weight: 600;
+}
+
+.sidebar-divider {
+    height: 1px;
+    background: #edf0f2;
+    margin: 17px 10px;
+}
+
+.logout-link {
+    color: #e05252;
+}
+
+.logout-link:hover {
+    background: #fff3f3;
+    color: #d9363e;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.profile-content {
+    flex: 1;
+    padding: 30px 38px;
+    max-width: 1450px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.profile-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 22px;
+}
+
+.breadcrumb {
+    font-size: 11px;
+    color: #8b959e;
+    margin-bottom: 7px;
+}
+
+.profile-page-header h1 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 600;
+    color: #202124;
+}
+
+.profile-page-header p {
+    margin: 6px 0 0;
+    font-size: 13px;
+    color: #7b858e;
+}
+
+.profile-save-top {
+    height: 38px;
+    padding: 0 16px;
+    border: 0;
+    border-radius: 5px;
+    background: #1677ff;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.profile-save-top i {
+    margin-right: 7px;
+}
+
+.profile-save-top:hover {
+    background: #095dcc;
+}
+
+
+/* =========================================================
+   PROFILE HEADER
+========================================================= */
+
+.profile-header-card {
+    background: #ffffff;
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+    min-height: 120px;
+    padding: 23px 26px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.large-profile-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #eaf3ff;
+    color: #1677ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.profile-main-info {
+    flex: 1;
+}
+
+.profile-main-info h2 {
+    margin: 0 0 8px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #202124;
+}
+
+.profile-main-info p {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 20px 0 0;
+    color: #75808a;
+    font-size: 12px;
+}
+
+.profile-main-info p i {
+    margin-right: 6px;
+    color: #1677ff;
+}
+
+.profile-status {
+    min-width: 250px;
+    border-left: 1px solid #edf0f2;
+    padding-left: 25px;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #16865c;
+    background: #ecf9f3;
+    border: 1px solid #d3f1e3;
+    padding: 5px 9px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.status-badge span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #16a36a;
+}
+
+.profile-status p {
+    margin: 13px 0 6px;
+    color: #7d8790;
+    font-size: 11px;
+}
+
+.completion-row {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.completion-bar {
+    width: 190px;
+    height: 6px;
+    border-radius: 5px;
+    background: #edf0f2;
+    overflow: hidden;
+}
+
+.completion-progress {
+    width: 80%;
+    height: 100%;
+    background: #1677ff;
+    border-radius: 5px;
+}
+
+.completion-row strong {
+    font-size: 11px;
+    color: #1677ff;
+}
+
+
+/* =========================================================
+   TABS
+========================================================= */
+
+.profile-tabs {
+    display: flex;
+    background: #ffffff;
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 0 12px;
+}
+
+.profile-tab {
+    border: 0;
+    background: transparent;
+    height: 48px;
+    padding: 0 17px;
+    border-bottom: 2px solid transparent;
+    color: #6d7780;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.profile-tab i {
+    margin-right: 7px;
+}
+
+.profile-tab:hover {
+    color: #1677ff;
+}
+
+.profile-tab.active {
+    color: #1677ff;
+    border-bottom-color: #1677ff;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.profile-form-card {
+    background: #ffffff;
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+    margin-top: 16px;
+    padding: 28px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #edf0f2;
+    margin-bottom: 25px;
+}
+
+.section-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 6px;
+    background: #eaf3ff;
+    color: #1677ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.section-title h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2b3035;
+}
+
+.section-title p {
+    margin: 4px 0 0;
+    font-size: 11px;
+    color: #8a949e;
+}
+
+
+/* =========================================================
+   FORM GRID
+========================================================= */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-size: 11px;
+    color: #59636c;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    min-height: 39px;
+    box-sizing: border-box;
+    border: 1px solid #d9dee3;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 9px 11px;
+    font-size: 12px;
+    color: #30363b;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover {
+    border-color: #b9c3cc;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #1677ff;
+    box-shadow: 0 0 0 2px rgba(22, 119, 255, 0.08);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a4adb5;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    border-top: 1px solid #edf0f2;
+    margin-top: 28px;
+    padding-top: 20px;
+}
+
+.cancel-btn {
+    height: 38px;
+    padding: 0 17px;
+    border: 1px solid #d7dce1;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #5d6872;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    background: #f6f7f8;
+}
+
+.save-btn {
+    height: 38px;
+    padding: 0 18px;
+    border: 0;
+    border-radius: 5px;
+    background: #1677ff;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.save-btn i {
+    margin-right: 7px;
+}
+
+.save-btn:hover {
+    background: #095dcc;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.profile-footer {
+    text-align: center;
+    padding: 30px 0 10px;
+    color: #9aa3ab;
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .profile-sidebar {
+        width: 70px;
+    }
+
+    .sidebar-heading {
+        display: none;
+    }
+
+    .profile-side-link {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .profile-side-link span {
+        display: none;
+    }
+
+    .profile-content {
+        padding: 22px;
+    }
+
+    .profile-status {
+        display: none;
+    }
+
+    .profile-main-info p {
+        display: flex;
+        margin-bottom: 5px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .profile-topbar {
+        padding: 0 14px;
+    }
+
+    .top-user-info,
+    .top-user > i {
+        display: none;
+    }
+
+    .profile-brand h2 {
+        font-size: 13px;
+    }
+
+    .profile-content {
+        padding: 15px;
+    }
+
+    .profile-page-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .profile-header-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full-width {
+        grid-column: auto;
+    }
+
+    .profile-tabs {
+        overflow-x: auto;
+    }
+
+    .profile-tab {
+        white-space: nowrap;
+    }
+}

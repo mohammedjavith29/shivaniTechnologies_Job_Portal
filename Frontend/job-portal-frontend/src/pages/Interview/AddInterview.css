@@ -1,0 +1,333 @@
+.add-interview-page {
+  min-height: 100vh;
+  padding: 30px;
+  background: #f5f7fb;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.add-interview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+
+.breadcrumb {
+  color: #667085;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.breadcrumb span {
+  margin: 0 8px;
+  color: #98a2b3;
+}
+
+.add-interview-header h1 {
+  margin: 0;
+  color: #101828;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.add-interview-header p {
+  margin: 7px 0 0;
+  color: #667085;
+  font-size: 14px;
+}
+
+/* BACK BUTTON */
+
+.back-btn {
+  height: 42px;
+  padding: 0 16px;
+
+  background: #ffffff;
+
+  border: 1px solid #d0d5dd;
+  border-radius: 7px;
+
+  color: #344054;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #f9fafb;
+}
+
+/* CARD */
+
+.schedule-card {
+  background: #ffffff;
+
+  border: 1px solid #e4e7ec;
+  border-radius: 10px;
+
+  box-shadow:
+    0 2px 8px rgba(16, 24, 40, 0.05);
+
+  overflow: hidden;
+}
+
+/* CARD HEADER */
+
+.schedule-card-header {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 22px 24px;
+
+  border-bottom: 1px solid #eaecf0;
+}
+
+.calendar-icon {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eff6ff;
+
+  border-radius: 8px;
+
+  font-size: 21px;
+}
+
+.schedule-card-header h2 {
+  margin: 0;
+
+  color: #101828;
+
+  font-size: 18px;
+  font-weight: 650;
+}
+
+.schedule-card-header p {
+  margin: 5px 0 0;
+
+  color: #667085;
+
+  font-size: 13px;
+}
+
+/* FORM */
+
+.schedule-form-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px 24px;
+
+  padding: 25px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.form-field.full {
+  grid-column: 1 / -1;
+}
+
+.form-field label {
+  color: #344054;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.form-field label span {
+  color: #d92d20;
+
+  margin-left: 3px;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d0d5dd;
+
+  border-radius: 7px;
+
+  background: #ffffff;
+
+  color: #101828;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition: 0.2s ease;
+}
+
+.form-field input,
+.form-field select {
+  height: 43px;
+
+  padding: 0 12px;
+}
+
+.form-field textarea {
+  padding: 12px;
+
+  resize: vertical;
+
+  min-height: 100px;
+
+  font-family: inherit;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #98a2b3;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+/* ACTIONS */
+
+.schedule-actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  padding: 18px 25px;
+
+  background: #fafbfc;
+
+  border-top: 1px solid #eaecf0;
+}
+
+.cancel-button,
+.schedule-button {
+  height: 41px;
+
+  padding: 0 18px;
+
+  border-radius: 7px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.cancel-button {
+  background: #ffffff;
+
+  border: 1px solid #d0d5dd;
+
+  color: #344054;
+}
+
+.cancel-button:hover {
+  background: #f9fafb;
+}
+
+.schedule-button {
+  background: #2563eb;
+
+  border: none;
+
+  color: #ffffff;
+}
+
+.schedule-button:hover {
+  background: #1d4ed8;
+}
+
+.schedule-button:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+  .add-interview-page {
+    padding: 20px;
+  }
+
+  .add-interview-header {
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .schedule-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-field.full {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .add-interview-page {
+    padding: 14px;
+  }
+
+  .add-interview-header {
+    flex-direction: column;
+  }
+
+  .add-interview-header h1 {
+    font-size: 25px;
+  }
+
+  .back-btn {
+    width: 100%;
+  }
+
+  .schedule-form-grid {
+    padding: 18px;
+  }
+
+  .schedule-card-header {
+    padding: 18px;
+  }
+
+  .schedule-actions {
+    flex-direction: column-reverse;
+
+    padding: 18px;
+  }
+
+  .cancel-button,
+  .schedule-button {
+    width: 100%;
+  }
+}

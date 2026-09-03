@@ -1,0 +1,539 @@
+/* =========================================================
+   COMPANY LIST - ZOHO STYLE
+========================================================= */
+
+.company-page {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.company-page-header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+}
+
+.company-page-header h1 {
+    margin: 0;
+
+    font-size: 25px;
+    font-weight: 600;
+
+    color: #1f2937;
+
+    letter-spacing: -0.2px;
+}
+
+.company-page-header p {
+    margin: 6px 0 0;
+
+    font-size: 13px;
+
+    color: #7b8794;
+}
+
+
+/* =========================================================
+   ADD BUTTON
+========================================================= */
+
+.company-add-btn {
+    height: 40px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 0 17px;
+
+    border: 1px solid #1683f7;
+    border-radius: 6px;
+
+    background: #1683f7;
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.company-add-btn:hover {
+    background: #0874e1;
+    border-color: #0874e1;
+
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+.company-add-btn i {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.company-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e6eb;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.company-card-header {
+    min-height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 22px;
+
+    border-bottom: 1px solid #e8ebef;
+}
+
+.company-card-header h2 {
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #202124;
+}
+
+.company-card-header p {
+    margin: 5px 0 0;
+
+    font-size: 12px;
+
+    color: #8993a1;
+}
+
+
+/* =========================================================
+   TOTAL COMPANIES
+========================================================= */
+
+.company-total {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 7px 12px;
+
+    border: 1px solid #e3e7ec;
+
+    border-radius: 6px;
+
+    background: #fafbfc;
+}
+
+.company-total span {
+    font-size: 11px;
+
+    color: #7d8793;
+}
+
+.company-total strong {
+    min-width: 24px;
+
+    font-size: 15px;
+
+    color: #1683f7;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   TABLE CONTAINER
+========================================================= */
+
+.company-table-container {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.company-table {
+    width: 100%;
+
+    min-width: 850px;
+
+    border-collapse: collapse;
+
+    table-layout: auto;
+}
+
+
+/* =========================================================
+   TABLE HEADER
+========================================================= */
+
+.company-table thead {
+    background: #f8f9fb;
+}
+
+.company-table th {
+    height: 48px;
+
+    padding: 0 18px;
+
+    border-bottom: 1px solid #e5e8ec;
+
+    color: #687381;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    text-align: left;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   TABLE BODY
+========================================================= */
+
+.company-table td {
+    height: 64px;
+
+    padding: 10px 18px;
+
+    border-bottom: 1px solid #edf0f3;
+
+    color: #4b5563;
+
+    font-size: 12px;
+
+    vertical-align: middle;
+
+    white-space: nowrap;
+}
+
+.company-table tbody tr {
+    transition: background 0.15s ease;
+}
+
+.company-table tbody tr:hover {
+    background: #fafcff;
+}
+
+.company-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   COMPANY NAME
+========================================================= */
+
+.company-name-cell {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.company-avatar {
+    width: 34px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    background: #eef6ff;
+
+    color: #1683f7;
+
+    font-size: 15px;
+}
+
+.company-name-cell span {
+    color: #263238;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.company-status {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+    background: #edf9f1;
+
+    color: #249653;
+
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.company-status span {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #27ae60;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.company-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+}
+
+.company-action {
+    width: 32px;
+    height: 32px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e1e5ea;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.company-action.edit {
+    color: #1683f7;
+}
+
+.company-action.edit:hover {
+    background: #eef6ff;
+
+    border-color: #b9dbff;
+}
+
+.company-action.delete {
+    color: #e55353;
+}
+
+.company-action.delete:hover {
+    background: #fff1f1;
+
+    border-color: #ffcaca;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.company-empty {
+    height: 300px !important;
+
+    text-align: center !important;
+
+    padding: 40px !important;
+}
+
+.company-empty-icon {
+    width: 54px;
+    height: 54px;
+
+    margin: 0 auto 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f1f6fc;
+
+    color: #8ba7c2;
+
+    font-size: 21px;
+}
+
+.company-empty h3 {
+    margin: 0 0 5px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #475569;
+}
+
+.company-empty p {
+    margin: 0 0 15px;
+
+    font-size: 12px;
+
+    color: #94a3b8;
+}
+
+.company-empty-btn {
+    height: 34px;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 0 13px;
+
+    border-radius: 5px;
+
+    background: #1683f7;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+.company-empty-btn:hover {
+    background: #0874e1;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.company-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    color: #7b8794;
+
+    font-size: 12px;
+}
+
+.company-spinner {
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #dce5ee;
+    border-top-color: #1683f7;
+
+    border-radius: 50%;
+
+    animation: company-spin 0.7s linear infinite;
+}
+
+@keyframes company-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .company-page-header {
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .company-card-header {
+        gap: 15px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .company-page-header {
+        flex-direction: column;
+    }
+
+    .company-add-btn {
+        width: 100%;
+    }
+
+    .company-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .company-total {
+        width: 100%;
+
+        justify-content: space-between;
+    }
+
+}

@@ -1,0 +1,673 @@
+/* =========================================================
+   ADD COMPANY - ZOHO INSPIRED UI
+========================================================= */
+
+.add-company-page {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 4px 0 40px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.add-company-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 24px;
+}
+
+.add-company-header-left {
+    min-width: 0;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.add-company-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+
+    font-size: 12px;
+    color: #8a94a3;
+}
+
+.add-company-breadcrumb a {
+    color: #1683f7;
+    text-decoration: none;
+}
+
+.add-company-breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.add-company-breadcrumb i {
+    font-size: 10px;
+    color: #aeb7c2;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.add-company-title-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.add-company-title-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #eef6ff;
+    color: #1683f7;
+
+    font-size: 19px;
+}
+
+.add-company-title-row h1 {
+    margin: 0;
+
+    color: #1d2b3a;
+
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.add-company-title-row p {
+    margin: 5px 0 0;
+
+    color: #7d8997;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.back-company-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    margin-top: 30px;
+
+    color: #596675;
+
+    font-size: 13px;
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition: color 0.2s ease;
+}
+
+.back-company-btn:hover {
+    color: #1683f7;
+}
+
+.back-company-btn i {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.add-company-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe5eb;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.03);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.add-company-card-header {
+    min-height: 86px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 20px 28px;
+
+    border-bottom: 1px solid #e7ebef;
+
+    background: #ffffff;
+}
+
+.add-company-card-header h2 {
+    margin: 0;
+
+    color: #273444;
+
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.add-company-card-header p {
+    margin: 5px 0 0;
+
+    color: #8793a1;
+
+    font-size: 12px;
+}
+
+.required-note {
+    color: #7d8793;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+}
+
+.required-note span {
+    color: #e55353;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   ERROR MESSAGE
+========================================================= */
+
+.company-form-error {
+    margin: 20px 28px 0;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 11px 13px;
+
+    border: 1px solid #ffd4d4;
+    border-radius: 6px;
+
+    background: #fff6f6;
+
+    color: #c43d3d;
+
+    font-size: 12px;
+}
+
+.company-form-error i {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.company-form {
+    width: 100%;
+}
+
+
+/* =========================================================
+   FORM SECTION
+========================================================= */
+
+.form-section {
+    padding: 26px 28px;
+}
+
+.description-section {
+    border-top: 1px solid #e8ebef;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.form-section-title {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 11px;
+
+    margin-bottom: 23px;
+}
+
+.section-icon {
+    width: 31px;
+    height: 31px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    background: #f2f7fc;
+    color: #1683f7;
+
+    font-size: 13px;
+}
+
+.form-section-title h3 {
+    margin: 1px 0 0;
+
+    color: #334155;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-section-title p {
+    margin: 4px 0 0;
+
+    color: #8a95a3;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   FORM GRID
+========================================================= */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    column-gap: 24px;
+    row-gap: 20px;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.form-group {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.form-group label {
+    margin-bottom: 7px;
+
+    color: #3d4854;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.form-group label span {
+    margin-left: 3px;
+
+    color: #e55353;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.input-wrapper {
+    position: relative;
+
+    width: 100%;
+}
+
+.input-wrapper i {
+    position: absolute;
+
+    left: 12px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #98a4b2;
+
+    font-size: 13px;
+
+    pointer-events: none;
+}
+
+.input-wrapper input {
+    width: 100%;
+    height: 40px;
+
+    box-sizing: border-box;
+
+    padding: 0 12px 0 36px;
+
+    border: 1px solid #d7dde4;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #263238;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.input-wrapper input::placeholder,
+.form-group textarea::placeholder {
+    color: #a3adb8;
+}
+
+.input-wrapper input:hover {
+    border-color: #c3cbd4;
+}
+
+.input-wrapper input:focus {
+    border-color: #1683f7;
+
+    box-shadow: 0 0 0 3px rgba(22, 131, 247, 0.09);
+}
+
+
+/* =========================================================
+   TEXTAREA
+========================================================= */
+
+.form-group textarea {
+    width: 100%;
+
+    min-height: 115px;
+
+    box-sizing: border-box;
+
+    padding: 11px 12px;
+
+    resize: vertical;
+
+    border: 1px solid #d7dde4;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #263238;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group textarea:hover {
+    border-color: #c3cbd4;
+}
+
+.form-group textarea:focus {
+    border-color: #1683f7;
+
+    box-shadow: 0 0 0 3px rgba(22, 131, 247, 0.09);
+}
+
+
+/* =========================================================
+   FIELD HINT
+========================================================= */
+
+.field-hint {
+    margin-top: 6px;
+
+    color: #9aa4af;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   FORM FOOTER
+========================================================= */
+
+.company-form-footer {
+    min-height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    padding: 15px 28px;
+
+    border-top: 1px solid #e7ebef;
+
+    background: #fafbfc;
+}
+
+
+/* =========================================================
+   CANCEL
+========================================================= */
+
+.cancel-company-btn {
+    height: 36px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 16px;
+
+    border: 1px solid #d5dbe2;
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    color: #596675;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.cancel-company-btn:hover {
+    background: #f5f7f9;
+
+    border-color: #c5ccd4;
+
+    color: #3d4854;
+}
+
+
+/* =========================================================
+   SAVE BUTTON
+========================================================= */
+
+.save-company-btn {
+    height: 36px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 0 17px;
+
+    border: 1px solid #1683f7;
+    border-radius: 5px;
+
+    background: #1683f7;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.save-company-btn:hover:not(:disabled) {
+    background: #0874e1;
+    border-color: #0874e1;
+}
+
+.save-company-btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.save-company-btn i {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   LOADING SPINNER
+========================================================= */
+
+.save-spinner {
+    width: 12px;
+    height: 12px;
+
+    border: 2px solid rgba(255, 255, 255, 0.45);
+
+    border-top-color: #ffffff;
+
+    border-radius: 50%;
+
+    animation: company-save-spin 0.7s linear infinite;
+}
+
+@keyframes company-save-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .add-company-page {
+        padding: 0 10px 30px;
+    }
+
+    .add-company-header {
+        flex-direction: column;
+    }
+
+    .back-company-btn {
+        margin-top: 0;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full-width {
+        grid-column: auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .add-company-card-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .required-note {
+        white-space: normal;
+    }
+
+    .form-section {
+        padding: 22px 18px;
+    }
+
+    .add-company-card-header {
+        padding: 18px;
+    }
+
+    .company-form-footer {
+        padding: 14px 18px;
+
+        justify-content: stretch;
+    }
+
+    .cancel-company-btn,
+    .save-company-btn {
+        flex: 1;
+    }
+}

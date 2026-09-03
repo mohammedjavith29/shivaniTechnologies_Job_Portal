@@ -1,0 +1,527 @@
+.employer-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 28px;
+  background: #f6f7f9;
+  box-sizing: border-box;
+  font-family: Inter, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.employer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.employer-title-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.employer-title-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  background: #eaf2ff;
+  color: #2f6fed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+}
+
+.employer-title-row h1 {
+  margin: 0 0 4px;
+  color: #202124;
+  font-size: 25px;
+  font-weight: 650;
+  letter-spacing: -0.4px;
+}
+
+.employer-title-row p {
+  margin: 0;
+  color: #747b86;
+  font-size: 13.5px;
+}
+
+.add-employer-btn {
+  height: 42px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 6px;
+  background: #2f6fed;
+  color: #ffffff;
+  font-size: 13.5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(47, 111, 237, 0.2);
+  transition: 0.2s ease;
+}
+
+.add-employer-btn svg {
+  font-size: 17px;
+}
+
+.add-employer-btn:hover {
+  background: #245fd4;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   CARD
+========================= */
+
+.employer-card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e3e7ed;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(22, 34, 51, 0.04);
+}
+
+/* =========================
+   TOOLBAR
+========================= */
+
+.employer-toolbar {
+  min-height: 70px;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid #edf0f3;
+}
+
+.employer-search {
+  position: relative;
+  width: 420px;
+  max-width: 100%;
+}
+
+.employer-search input {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0 14px 0 40px;
+  border: 1px solid #d9dee6;
+  border-radius: 6px;
+  outline: none;
+  background: #ffffff;
+  color: #333b45;
+  font-size: 13.5px;
+  transition: 0.2s ease;
+}
+
+.employer-search input::placeholder {
+  color: #9aa2ad;
+}
+
+.employer-search input:focus {
+  border-color: #5b8def;
+  box-shadow: 0 0 0 3px
+    rgba(47, 111, 237, 0.08);
+}
+
+.search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8a929d;
+  font-size: 16px;
+}
+
+.employer-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.record-count {
+  color: #707782;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.refresh-btn {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #dfe3e8;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #59616d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.refresh-btn:hover {
+  background: #f4f7fb;
+  color: #2f6fed;
+  border-color: #bdcce8;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.employer-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.employer-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+}
+
+.employer-table thead {
+  background: #f8f9fb;
+}
+
+.employer-table th {
+  padding: 13px 18px;
+  text-align: left;
+  color: #616975;
+  font-size: 12px;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  border-bottom: 1px solid #e8ebef;
+}
+
+.employer-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid #edf0f3;
+  color: #343b44;
+  font-size: 13.5px;
+  vertical-align: middle;
+}
+
+.employer-table tbody tr {
+  transition: background 0.15s ease;
+}
+
+.employer-table tbody tr:hover {
+  background: #fafcff;
+}
+
+.employer-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.serial-number {
+  color: #8b929c !important;
+  width: 50px;
+}
+
+/* =========================
+   EMPLOYER INFO
+========================= */
+
+.employer-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.company-avatar {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #edf3ff;
+  color: #346fe3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.employer-info h4 {
+  margin: 0 0 4px;
+  font-size: 13.8px;
+  color: #252b33;
+  font-weight: 600;
+}
+
+.employer-info span {
+  color: #8b929d;
+  font-size: 11.8px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.contact-info > div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #626b76;
+}
+
+.contact-info svg {
+  width: 14px;
+  color: #8c95a0;
+  flex-shrink: 0;
+}
+
+/* =========================
+   LOCATION
+========================= */
+
+.location-info {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #626b76;
+}
+
+.location-info svg {
+  color: #8c95a0;
+  flex-shrink: 0;
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.status-badge {
+  width: max-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.status-active {
+  color: #16844a;
+  background: #eaf8f0;
+}
+
+.status-active .status-dot {
+  background: #1faa61;
+}
+
+.status-inactive {
+  color: #b34a4a;
+  background: #fff0f0;
+}
+
+.status-inactive .status-dot {
+  background: #d95858;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+
+.action-heading {
+  text-align: center !important;
+}
+
+.employer-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.action-btn {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #dde2e8;
+  border-radius: 6px;
+  background: #ffffff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.18s ease;
+}
+
+.edit-btn {
+  color: #2f6fed;
+}
+
+.edit-btn:hover {
+  background: #edf3ff;
+  border-color: #b8cdf7;
+}
+
+.delete-btn {
+  color: #d94b4b;
+}
+
+.delete-btn:hover {
+  background: #fff1f1;
+  border-color: #f0c0c0;
+}
+
+.action-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* =========================
+   LOADING / EMPTY
+========================= */
+
+.employer-loading {
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #78818d;
+}
+
+.loader {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #e4e9f0;
+  border-top-color: #2f6fed;
+  border-radius: 50%;
+  animation: employerSpin 0.8s linear infinite;
+}
+
+@keyframes employerSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.empty-employers {
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.empty-icon {
+  width: 58px;
+  height: 58px;
+  background: #f0f4fa;
+  color: #8090a5;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  margin-bottom: 14px;
+}
+
+.empty-employers h3 {
+  margin: 0 0 6px;
+  color: #39414b;
+  font-size: 16px;
+}
+
+.empty-employers p {
+  margin: 0;
+  color: #8a929d;
+  font-size: 13px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.employer-footer {
+  min-height: 54px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1px solid #edf0f3;
+  background: #ffffff;
+  color: #777f89;
+  font-size: 12.5px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .employer-page {
+    padding: 20px;
+  }
+
+  .employer-header {
+    align-items: flex-start;
+  }
+
+  .employer-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .employer-search {
+    width: 100%;
+  }
+
+  .employer-toolbar-right {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 600px) {
+  .employer-page {
+    padding: 14px;
+  }
+
+  .employer-header {
+    flex-direction: column;
+  }
+
+  .add-employer-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .employer-title-row h1 {
+    font-size: 21px;
+  }
+
+  .employer-title-icon {
+    width: 42px;
+    height: 42px;
+  }
+}

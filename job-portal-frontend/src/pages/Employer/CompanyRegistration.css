@@ -1,0 +1,245 @@
+.company-registration-page {
+    min-height: 100vh;
+    background: #f5f6f8;
+    padding: 25px 30px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* HEADER */
+
+.company-page-header {
+    margin-bottom: 20px;
+}
+
+.company-breadcrumb {
+    font-size: 12px;
+    color: #8a8f95;
+    margin-bottom: 8px;
+}
+
+.company-breadcrumb span {
+    margin: 0 7px;
+}
+
+.company-page-header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #222;
+}
+
+.company-page-header p {
+    margin: 6px 0 0;
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* MAIN CARD */
+
+.company-form-card {
+    background: #fff;
+    border: 1px solid #dfe3e8;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+/* SECTION */
+
+.form-section {
+    padding: 24px 26px;
+    border-bottom: 1px solid #e5e7ea;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 23px;
+}
+
+.section-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    background: #eef5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.section-header h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.section-header p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    color: #8a8f95;
+}
+
+
+/* FORM GRID */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 28px;
+    row-gap: 19px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* LABEL */
+
+.form-field label {
+    font-size: 12px;
+    color: #444;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.form-field label span {
+    color: #e23b3b;
+    margin-left: 3px;
+}
+
+
+/* INPUTS */
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d5d9de;
+    border-radius: 4px;
+    background: #fff;
+    color: #333;
+    font-size: 13px;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.form-field input,
+.form-field select {
+    height: 37px;
+    padding: 0 11px;
+}
+
+.form-field textarea {
+    padding: 10px 11px;
+    resize: vertical;
+    min-height: 75px;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: #a5a9ae;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-color: #1473e6;
+    box-shadow: 0 0 0 2px rgba(20, 115, 230, 0.08);
+}
+
+
+/* FOOTER */
+
+.company-form-footer {
+    height: 68px;
+    padding: 0 26px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    background: #fafbfc;
+}
+
+
+/* BUTTONS */
+
+.form-cancel-btn,
+.form-save-btn {
+    height: 36px;
+    padding: 0 18px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.form-cancel-btn {
+    background: #fff;
+    border: 1px solid #d3d7dc;
+    color: #444;
+}
+
+.form-cancel-btn:hover {
+    background: #f5f6f8;
+}
+
+.form-save-btn {
+    background: #1473e6;
+    border: 1px solid #1473e6;
+    color: #fff;
+}
+
+.form-save-btn:hover {
+    background: #0d65d1;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .company-registration-page {
+        padding: 18px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .company-page-header h1 {
+        font-size: 21px;
+    }
+
+    .form-section {
+        padding: 20px 17px;
+    }
+
+    .company-form-footer {
+        padding: 0 17px;
+    }
+
+    .form-cancel-btn,
+    .form-save-btn {
+        flex: 1;
+    }
+}

@@ -1,0 +1,618 @@
+/* =========================================
+   CANDIDATE PAGE
+========================================= */
+
+.candidate-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 32px;
+    background: #f7f9fc;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.candidate-page-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.candidate-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.candidate-heading-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf2ff;
+    color: #2563eb;
+
+    font-size: 21px;
+}
+
+.candidate-heading h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #172033;
+}
+
+.candidate-heading p {
+    margin: 5px 0 0;
+    color: #7b8798;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   ADD BUTTON
+========================================= */
+
+.add-candidate-btn {
+    height: 44px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 0 18px;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.18);
+
+    transition: 0.2s ease;
+}
+
+.add-candidate-btn:hover {
+    background: #1d4ed8;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   STAT
+========================================= */
+
+.candidate-stat-row {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.candidate-stat-card {
+    min-width: 230px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 18px 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5eaf1;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.candidate-stat-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #eef4ff;
+    color: #2563eb;
+
+    font-size: 19px;
+}
+
+.candidate-stat-card span {
+    display: block;
+
+    color: #7b8798;
+
+    font-size: 12px;
+
+    margin-bottom: 4px;
+}
+
+.candidate-stat-card strong {
+    display: block;
+
+    color: #172033;
+
+    font-size: 23px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   LIST CARD
+========================================= */
+
+.candidate-list-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e5eaf1;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+}
+
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.candidate-list-header {
+    min-height: 82px;
+
+    padding: 18px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #edf0f4;
+}
+
+.candidate-list-header h2 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.candidate-list-header p {
+    margin: 5px 0 0;
+
+    color: #8994a5;
+
+    font-size: 13px;
+}
+
+.header-add-btn {
+    height: 38px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d9e3f2;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.header-add-btn:hover {
+    background: #f3f7ff;
+    color: #1d4ed8;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.candidate-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.candidate-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: auto;
+}
+
+.candidate-table thead {
+    background: #f8fafc;
+}
+
+.candidate-table th {
+    height: 50px;
+
+    padding: 0 22px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #e8edf3;
+
+    color: #687588;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.candidate-table td {
+    height: 70px;
+
+    padding: 12px 22px;
+
+    border-bottom: 1px solid #eef1f5;
+
+    color: #475569;
+
+    font-size: 13px;
+
+    vertical-align: middle;
+}
+
+.candidate-table tbody tr {
+    transition: background 0.15s ease;
+}
+
+.candidate-table tbody tr:hover {
+    background: #fafcff;
+}
+
+.candidate-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   ID
+========================================= */
+
+.candidate-id {
+    color: #64748b;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   USER
+========================================= */
+
+.candidate-user {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+}
+
+.candidate-avatar {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eaf2ff;
+    color: #2563eb;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.candidate-user strong {
+    display: block;
+
+    color: #263246;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.candidate-user small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   EMAIL
+========================================= */
+
+.candidate-email {
+    color: #475569;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.candidate-status {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: #ecfdf3;
+    color: #15803d;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.candidate-status::before {
+    content: "";
+
+    width: 6px;
+    height: 6px;
+
+    margin-right: 6px;
+
+    border-radius: 50%;
+
+    background: #22c55e;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.candidate-actions {
+    display: flex;
+    align-items: center;
+}
+
+.candidate-delete-btn {
+    height: 34px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 0 11px;
+
+    border: 1px solid #fecaca;
+
+    border-radius: 6px;
+
+    background: #fff7f7;
+
+    color: #dc2626;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.candidate-delete-btn:hover {
+    background: #fee2e2;
+    border-color: #fca5a5;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.candidate-empty {
+    height: 330px !important;
+
+    text-align: center !important;
+
+    padding: 40px !important;
+}
+
+.empty-candidate {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.empty-candidate-icon {
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 14px;
+
+    border-radius: 50%;
+
+    background: #f1f5f9;
+
+    color: #94a3b8;
+
+    font-size: 25px;
+}
+
+.empty-candidate h3 {
+    margin: 0;
+
+    color: #334155;
+
+    font-size: 16px;
+}
+
+.empty-candidate p {
+    margin: 7px 0 18px;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+}
+
+.empty-add-btn {
+    height: 38px;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 0 15px;
+
+    border-radius: 7px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.empty-add-btn:hover {
+    background: #1d4ed8;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.loading-box {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+.loading-box i {
+    animation: candidate-spin 1s linear infinite;
+}
+
+@keyframes candidate-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .candidate-page {
+        padding: 24px;
+    }
+
+    .candidate-page-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .candidate-table {
+        min-width: 850px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .candidate-page {
+        padding: 16px;
+    }
+
+    .candidate-page-header {
+        flex-direction: column;
+    }
+
+    .add-candidate-btn {
+        width: 100%;
+    }
+
+    .candidate-stat-card {
+        width: 100%;
+    }
+
+    .candidate-list-header {
+        align-items: flex-start;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .header-add-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

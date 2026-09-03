@@ -1,0 +1,5 @@
+cd /d "D:\Projects\shivani-technologies\Backend\shivani-technologies-backend"
+
+
+SELECT * FROM jobs;
+SELECT * FROM candidates;

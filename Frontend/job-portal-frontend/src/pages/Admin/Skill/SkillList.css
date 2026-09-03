@@ -1,0 +1,639 @@
+/* =========================================
+   SKILL LIST PAGE
+========================================= */
+
+.skill-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+  background: #f5f7fb;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.skill-page-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.skill-page-header h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #172033;
+}
+
+.skill-page-header p {
+  margin: 7px 0 0;
+  font-size: 14px;
+  color: #7b8496;
+}
+
+
+/* =========================================
+   ADD BUTTON
+========================================= */
+
+.skill-add-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  min-height: 42px;
+  padding: 0 18px;
+
+  border-radius: 8px;
+
+  background: #1677ff;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  box-shadow: 0 4px 12px rgba(22, 119, 255, 0.18);
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.skill-add-button:hover {
+  background: #0867e8;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(22, 119, 255, 0.24);
+}
+
+
+/* =========================================
+   SUMMARY CARD
+========================================= */
+
+.skill-summary {
+  width: 100%;
+  max-width: 330px;
+
+  min-height: 92px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 18px 20px;
+  margin-bottom: 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #e7ebf2;
+  border-radius: 10px;
+
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.skill-summary-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 15px;
+
+  border-radius: 10px;
+
+  background: #edf4ff;
+  color: #1677ff;
+
+  font-size: 21px;
+}
+
+.skill-summary span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  font-size: 13px;
+  color: #7b8496;
+}
+
+.skill-summary strong {
+  display: block;
+
+  font-size: 23px;
+  line-height: 1;
+
+  color: #172033;
+}
+
+
+/* =========================================
+   TABLE CARD
+========================================= */
+
+.skill-table-card {
+  width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #e7ebf2;
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.04);
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.skill-table-header {
+  min-height: 84px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 24px;
+
+  border-bottom: 1px solid #edf0f4;
+}
+
+.skill-table-header h2 {
+  margin: 0;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  color: #172033;
+}
+
+.skill-table-header p {
+  margin: 5px 0 0;
+
+  font-size: 13px;
+
+  color: #8a93a3;
+}
+
+
+/* =========================================
+   REFRESH BUTTON
+========================================= */
+
+.skill-refresh-button {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #e1e6ee;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #64748b;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.skill-refresh-button:hover {
+  background: #f1f5f9;
+  color: #1677ff;
+  border-color: #cdddf8;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.skill-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.skill-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  table-layout: fixed;
+}
+
+.skill-table thead {
+  background: #f8fafc;
+}
+
+.skill-table th {
+  height: 52px;
+
+  padding: 0 20px;
+
+  text-align: left;
+
+  border-bottom: 1px solid #e5e9f0;
+
+  color: #687386;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.4px;
+}
+
+.skill-table td {
+  min-height: 68px;
+
+  padding: 14px 20px;
+
+  border-bottom: 1px solid #edf0f4;
+
+  color: #334155;
+
+  font-size: 14px;
+
+  vertical-align: middle;
+}
+
+.skill-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.skill-table tbody tr:hover {
+  background: #fafcff;
+}
+
+.skill-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =========================================
+   COLUMN WIDTHS
+========================================= */
+
+.skill-table th:nth-child(1),
+.skill-table td:nth-child(1) {
+  width: 70px;
+}
+
+.skill-table th:nth-child(2),
+.skill-table td:nth-child(2) {
+  width: auto;
+}
+
+.skill-table th:nth-child(3),
+.skill-table td:nth-child(3) {
+  width: 130px;
+}
+
+.skill-table th:nth-child(4),
+.skill-table td:nth-child(4) {
+  width: 210px;
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.skill-number {
+  color: #94a3b8 !important;
+  font-size: 13px !important;
+}
+
+
+/* =========================================
+   SKILL NAME
+========================================= */
+
+.skill-name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  min-width: 0;
+}
+
+.skill-icon {
+  width: 36px;
+  height: 36px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #edf4ff;
+  color: #1677ff;
+
+  font-size: 15px;
+}
+
+.skill-name-wrapper span {
+  overflow: hidden;
+
+  color: #1e293b;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.skill-status {
+  display: inline-flex;
+  align-items: center;
+
+  min-height: 26px;
+
+  padding: 0 10px;
+
+  border-radius: 20px;
+
+  background: #ecfdf3;
+  color: #16834b;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.skill-status::before {
+  content: "";
+
+  width: 6px;
+  height: 6px;
+
+  margin-right: 6px;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.skill-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skill-edit-button,
+.skill-delete-button {
+  min-height: 34px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding: 0 11px;
+
+  border-radius: 7px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+
+/* EDIT */
+
+.skill-edit-button {
+  border: 1px solid #d7e5fb;
+
+  background: #f4f8ff;
+
+  color: #1677ff;
+}
+
+.skill-edit-button:hover {
+  background: #e8f1ff;
+  color: #075dcc;
+}
+
+
+/* DELETE */
+
+.skill-delete-button {
+  border: 1px solid #f4d3d3;
+
+  background: #fff7f7;
+
+  color: #dc3545;
+}
+
+.skill-delete-button:hover {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.skill-empty-cell {
+  height: 330px;
+
+  padding: 0 !important;
+
+  text-align: center;
+}
+
+.skill-empty-state {
+  min-height: 330px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px;
+}
+
+.skill-empty-icon {
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 15px;
+
+  border-radius: 50%;
+
+  background: #f1f5f9;
+
+  color: #94a3b8;
+
+  font-size: 25px;
+}
+
+.skill-empty-state h3 {
+  margin: 0 0 6px;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  color: #334155;
+}
+
+.skill-empty-state p {
+  margin: 0 0 18px;
+
+  font-size: 13px;
+
+  color: #94a3b8;
+}
+
+.skill-empty-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  min-height: 38px;
+
+  padding: 0 15px;
+
+  border-radius: 7px;
+
+  background: #1677ff;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.skill-empty-button:hover {
+  background: #0867e8;
+  color: #ffffff;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.skill-loading {
+  min-height: 330px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  color: #7b8496;
+
+  font-size: 13px;
+}
+
+.skill-spinner {
+  width: 30px;
+  height: 30px;
+
+  border: 3px solid #e5eaf2;
+  border-top-color: #1677ff;
+
+  border-radius: 50%;
+
+  animation: skillSpin 0.8s linear infinite;
+}
+
+@keyframes skillSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .skill-page {
+    padding: 24px;
+  }
+
+  .skill-table {
+    min-width: 760px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .skill-page {
+    padding: 18px;
+  }
+
+  .skill-page-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .skill-add-button {
+    width: 100%;
+  }
+
+  .skill-summary {
+    max-width: none;
+  }
+
+}

@@ -1,0 +1,33 @@
+# Eclipse / Spring Tool Suite
+.metadata/
+**/.metadata/
+
+# Backend configuration containing local secrets
+Backend/shivani-technologies-backend/src/main/resources/application.properties
+
+# Frontend
+Frontend/job-portal-frontend/node_modules/
+Frontend/job-portal-frontend/build/
+
+# Backend
+Backend/shivani-technologies-backend/target/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Java
+*.class
+
+# Logs
+*.log

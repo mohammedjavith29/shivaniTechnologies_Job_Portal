@@ -1,0 +1,274 @@
+.add-candidate-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 32px;
+    background: #f7f9fc;
+}
+
+.add-candidate-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.breadcrumb {
+    margin-bottom: 7px;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.add-candidate-header h1 {
+    margin: 0;
+    color: #172033;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.add-candidate-header p {
+    margin: 6px 0 0;
+    color: #7b8798;
+    font-size: 14px;
+}
+
+.back-candidate-btn {
+    height: 40px;
+    padding: 0 15px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    border: 1px solid #dce3ec;
+    border-radius: 7px;
+
+    background: #ffffff;
+    color: #475569;
+
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.back-candidate-btn:hover {
+    background: #f8fafc;
+    color: #2563eb;
+}
+
+.add-candidate-card {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border: 1px solid #e5eaf1;
+    border-radius: 12px;
+
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.05);
+    overflow: hidden;
+}
+
+.add-candidate-card-header {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 22px 26px;
+
+    border-bottom: 1px solid #edf0f4;
+}
+
+.form-title-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #eaf2ff;
+    color: #2563eb;
+
+    font-size: 19px;
+}
+
+.add-candidate-card-header h2 {
+    margin: 0;
+    color: #172033;
+    font-size: 17px;
+}
+
+.add-candidate-card-header p {
+    margin: 5px 0 0;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.candidate-form-body {
+    padding: 28px;
+}
+
+.candidate-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.candidate-form-group label {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #334155;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.candidate-form-group label span {
+    margin-left: 3px;
+    color: #ef4444;
+}
+
+.candidate-input {
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #dbe2ea;
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    transition: 0.2s;
+}
+
+.candidate-input:focus-within {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.candidate-input i {
+    width: 42px;
+
+    text-align: center;
+
+    color: #94a3b8;
+    font-size: 15px;
+}
+
+.candidate-input input {
+    width: 100%;
+    height: 100%;
+
+    padding: 0 12px 0 0;
+
+    border: none;
+    outline: none;
+
+    color: #334155;
+
+    font-size: 13px;
+}
+
+.candidate-input input::placeholder {
+    color: #b0b8c5;
+}
+
+.candidate-form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    padding: 18px 26px;
+
+    background: #fafbfd;
+
+    border-top: 1px solid #edf0f4;
+}
+
+.candidate-cancel-btn,
+.candidate-save-btn {
+    height: 40px;
+
+    padding: 0 16px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.candidate-cancel-btn {
+    border: 1px solid #dce3ec;
+
+    background: #ffffff;
+    color: #475569;
+
+    text-decoration: none;
+}
+
+.candidate-cancel-btn:hover {
+    background: #f8fafc;
+}
+
+.candidate-save-btn {
+    border: none;
+
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.candidate-save-btn:hover {
+    background: #1d4ed8;
+}
+
+.candidate-save-btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+
+    .add-candidate-page {
+        padding: 18px;
+    }
+
+    .add-candidate-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .back-candidate-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .candidate-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .candidate-form-body {
+        padding: 20px;
+    }
+
+    .candidate-form-footer {
+        padding: 16px 20px;
+    }
+}

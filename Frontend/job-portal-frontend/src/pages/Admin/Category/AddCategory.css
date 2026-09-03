@@ -1,0 +1,445 @@
+/* =========================================
+   ADD CATEGORY PAGE
+========================================= */
+
+.add-category-page {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+
+  padding: 32px 42px 60px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.category-breadcrumb {
+  display: flex;
+  align-items: center;
+
+  font-size: 13px;
+  color: #718096;
+
+  margin-bottom: 12px;
+}
+
+.category-breadcrumb span {
+  margin: 0 8px;
+  color: #a0aec0;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.category-page-header {
+  margin-bottom: 28px;
+}
+
+.category-page-header h1 {
+  margin: 0;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  color: #172b4d;
+
+  letter-spacing: -0.3px;
+}
+
+.category-page-header p {
+  margin: 8px 0 0;
+
+  font-size: 14px;
+  color: #718096;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.category-form-card {
+  width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #e3e8ef;
+
+  border-radius: 10px;
+
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.category-form-header {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 24px 30px;
+
+  border-bottom: 1px solid #edf0f4;
+
+  background: #ffffff;
+}
+
+.category-header-icon {
+  width: 44px;
+  height: 44px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #eef5ff;
+
+  color: #2563eb;
+
+  font-size: 20px;
+}
+
+.category-form-header h2 {
+  margin: 0;
+
+  font-size: 20px;
+  font-weight: 650;
+
+  color: #172b4d;
+}
+
+.category-form-header p {
+  margin: 5px 0 0;
+
+  font-size: 13px;
+
+  color: #718096;
+}
+
+
+/* =========================================
+   FORM SECTION
+========================================= */
+
+.category-form-section {
+  padding: 30px;
+
+  min-height: 260px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.category-section-title {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-bottom: 26px;
+}
+
+.category-section-icon {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  background: #f1f5f9;
+
+  color: #526581;
+
+  font-size: 15px;
+}
+
+.category-section-title h3 {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 650;
+
+  color: #172b4d;
+}
+
+.category-section-title p {
+  margin: 4px 0 0;
+
+  font-size: 13px;
+
+  color: #718096;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.category-form-group {
+  width: 100%;
+
+  max-width: 650px;
+}
+
+.category-form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #263b5a;
+}
+
+.category-form-group label span {
+  color: #e53e3e;
+
+  margin-left: 2px;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.category-input-wrapper {
+  position: relative;
+
+  width: 100%;
+}
+
+.category-input-icon {
+  position: absolute;
+
+  left: 13px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #8a98ab;
+
+  font-size: 14px;
+
+  pointer-events: none;
+}
+
+.category-input-wrapper input {
+  width: 100%;
+  height: 44px;
+
+  box-sizing: border-box;
+
+  padding: 0 14px 0 39px;
+
+  border: 1px solid #d5dce5;
+
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  color: #263b5a;
+
+  font-family: inherit;
+  font-size: 13px;
+
+  outline: none;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.category-input-wrapper input::placeholder {
+  color: #a0aaba;
+}
+
+.category-input-wrapper input:hover {
+  border-color: #b8c2d0;
+}
+
+.category-input-wrapper input:focus {
+  border-color: #4c8bf5;
+
+  box-shadow:
+    0 0 0 3px rgba(76, 139, 245, 0.1);
+}
+
+
+/* =========================================
+   HELP TEXT
+========================================= */
+
+.category-form-group small {
+  display: block;
+
+  margin-top: 7px;
+
+  font-size: 11px;
+
+  color: #8995a7;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.category-form-footer {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  padding: 20px 30px;
+
+  background: #fafbfc;
+
+  border-top: 1px solid #edf0f4;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.category-btn-cancel,
+.category-btn-save {
+  height: 38px;
+
+  padding: 0 18px;
+
+  border-radius: 6px;
+
+  font-family: inherit;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  transition: all 0.15s ease;
+}
+
+
+/* Cancel */
+
+.category-btn-cancel {
+  background: #ffffff;
+
+  color: #526581;
+
+  border: 1px solid #d5dce5;
+}
+
+.category-btn-cancel:hover {
+  background: #f7f9fb;
+
+  border-color: #b8c2d0;
+}
+
+
+/* Save */
+
+.category-btn-save {
+  background: #2563eb;
+
+  color: #ffffff;
+
+  border: 1px solid #2563eb;
+}
+
+.category-btn-save:hover {
+  background: #1d4ed8;
+
+  border-color: #1d4ed8;
+}
+
+.category-btn-save:disabled {
+  opacity: 0.65;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .add-category-page {
+    padding: 25px;
+  }
+
+  .category-form-group {
+    max-width: 100%;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .add-category-page {
+    padding: 20px 15px 40px;
+  }
+
+  .category-page-header h1 {
+    font-size: 24px;
+  }
+
+  .category-form-header {
+    padding: 20px;
+  }
+
+  .category-form-section {
+    padding: 22px 20px;
+  }
+
+  .category-form-footer {
+    padding: 18px 20px;
+  }
+
+  .category-btn-cancel,
+  .category-btn-save {
+    flex: 1;
+  }
+
+}
